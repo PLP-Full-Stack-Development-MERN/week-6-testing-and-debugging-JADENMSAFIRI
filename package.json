@@ -1,0 +1,29 @@
+{
+  "name": "mern-bug-tracker",
+  "version": "1.0.0",
+  "description": "A bug tracking application built with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}
